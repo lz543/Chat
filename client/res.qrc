@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="1">images/e.png</file>
+        <file alias="2">images/picture.png</file>
+        <file alias="3">images/yx_folder.png</file>
+        <file>images/kong.jpg</file>
+        <file>images/yx_x.png</file>
+        <file>images/suoxiao.png</file>
+        <file>images/bb.gif</file>
+        <file>images/p.png</file>
+        <file>images/jia.png</file>
+        <file>images/J.png</file>
+        <file>images/laba.png</file>
+        <file>images/s.png</file>
+    </qresource>
+</RCC>
