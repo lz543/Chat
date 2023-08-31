@@ -95,11 +95,8 @@ void Server::onNewConnection()
 void Server::onReadyRead()
 {
     QTcpSocket* clientSocket = qobject_cast<QTcpSocket*>(sender());
-    if (clientSocket)
-    {
-        QByteArray jsonData = clientSocket->readAll();
-        processData(clientSocket,jsonData);
-    }
+    QByteArray jsonData = clientSocket->readAll();
+    processData(clientSocket,jsonData);
 }
 
 void Server::processData(QTcpSocket*clientSocket, const QByteArray& jsonData){
