@@ -12,8 +12,8 @@
 #include<QFileDialog>
 #include<QGraphicsDropShadowEffect>
 
-#define ADDRESS "192.168.0.107"
-#define PORT 60
+#define ADDRESS "192.168.0.104"
+#define PORT 8888
 
 qt4::qt4(QWidget *parent)
     : QWidget(parent)
