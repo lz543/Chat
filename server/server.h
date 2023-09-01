@@ -34,10 +34,15 @@ private:
     QMap<int, QTcpSocket*> clientMap;
     QMap<QTcpSocket*, int> socketToClientIdMap;
     QMap<int, QQueue<QJsonObject>> offLineMessages;
-    void processData(QTcpSocket*clientSocket, const QByteArray& jsonData);
-
-
-
+    QByteArray imageToByteArray(const QString &imagePath, int quality = 50);
+    void processMessage(const QJsonObject& message);
+    void processAdd(const QJsonObject& message);
+    void processLogin(QTcpSocket* clientSocket, const QJsonObject& message);
+    void processEnroll(QTcpSocket* clientSocket, const QJsonObject& message);
+    void processFriends(QTcpSocket* clientSocket, const QJsonObject& message);
+    void processSearch(QTcpSocket* clientSocket, const QJsonObject& message);
+    void processRmessage(QTcpSocket* clientSocket, const QJsonObject& message);
+    void processAddResponse(QTcpSocket* clientSocket, const QJsonObject& message);
 };
 
 #endif // SERVER_H
